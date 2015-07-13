@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html, body, * {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*TELA FULL*/
+body article {
+  max-width: 100% !important;
+}
+
+/*COLOCA A BARRA DO GLOGO POR CIMA*/
+body #sticker {
+  z-index: 100000000000000000000000000000;
+  position: relative !important;
+}
+
+body #menu-editoria {
+  z-index: 100000000000000000000000000000;
+}
+
+/*TIRA O TÍTULO E SUBTÍTULO DA PÁGINA*/
+/*
+body .head-materia{
+  height: 0;
+  overflow: hidden;s
+}
+body #all_banner{
+  height: 0 !important;
+  overflow: hidden  !important;
+  padding: 0  !important;
+  border: none  !important;
+  background: none  !important;
+  margin: 0  !important;
+}
+
+body article+.row{
+  display: none;
+}*/
+/*
+  @media screen and(max-width: 1024px){
+*/
+
+/*# sourceMappingURL=main_mobi.css.map */

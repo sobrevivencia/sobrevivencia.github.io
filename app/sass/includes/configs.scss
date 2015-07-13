@@ -1,0 +1,34 @@
+// ESTRUTURA
+$folder: "rio-450";
+$url_dev: "http://localhost:9000/";
+$url_svn: "/htmlinfostatics/templates/"+$folder+"/";
+$url_qa: "http://ec2-54-235-89-71.compute-1.amazonaws.com/" +$folder+ "/";
+$url_s3: "http://infograficos-estaticos.s3.amazonaws.com/"+$folder+"/";
+
+// $url_usage: $url_s3+"assets";
+$url_usage: "..";
+
+// FONTS
+$fc: "Times New Roman", times, serif;
+$fl: OgloboCondensedLight, $fc;
+$fr: OgloboCondensedRegular, $fc;
+$fsb: OgloboCondensedSemibold, $fc;
+$fm: OgloboCondensedMedium, $fc;
+$fb: OgloboCondensedBold, $fc;
+
+
+@mixin bg($file, $type) {
+  background: url($url_usage+/images/$file+"."+$type) no-repeat 0 0 transparent;
+}
+
+@mixin bgc($file, $type, $comp) {
+  background: url($url_usage+/images/$file+"."+$type) $comp;
+}
+
+@mixin bgi($file, $type) {
+  background-image: url($url_usage+/images/$file+"."+$type);
+}
+
+@function p($filho, $pai){
+  @return ($filho/$pai)*100%;
+}

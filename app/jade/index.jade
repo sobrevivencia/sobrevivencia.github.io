@@ -1,0 +1,32 @@
+if dev 
+	doctype html
+	html
+		head
+			meta(name="viewport" content="width=device-width, user-scalable=no")
+			link(href="fonts.css" type="text/css" rel="stylesheet")
+			script(src="jquery/dist/jquery.min.js")
+				
+			include ./includes/sources_css.jade
+		body
+			include ./includes/master.jade
+			include ./includes/sources_js.jade
+else
+	{% extends "redesenho/pagina.html" %}
+	{% block include_head_template %}
+	meta(name="viewport" content="width=device-width, initial-scale=1.0")
+	{% if mobile %}
+	include ./includes/sources_css_mobi.jade
+	{% else %}
+	include ./includes/sources_css.jade
+	{% endif %}	
+	{% endblock %}
+	{% block mainContent %}
+	{% if mobile %}
+	include ./includes/master_mobi.jade
+	include ./includes/sources_js_mobi.jade
+	{% else %}	
+	include ./includes/master.jade
+	include ./includes/sources_js.jade
+	{% endif %}	
+	{% endblock mainContent %}					
+

@@ -1,0 +1,26 @@
+
+{% extends "redesenho/pagina.html" %}
+{% block include_head_template %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">{% if mobile %}
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/css/main_mobi.css" type="text/css" rel="stylesheet">{% else %}
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link href="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/css/main.css" type="text/css" rel="stylesheet">{% endif %}	
+{% endblock %}
+{% block mainContent %}
+{% if mobile %}
+<div id="infoarte">
+  <div id="tudo"></div>
+</div>
+<script src="//localhost:35729/livereload.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/json2.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/underscore-min.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/main_mobi.js"></script>{% else %}	
+<div id="infoarte">
+  <div id="tudo"></div>
+</div>
+<script src="//localhost:35729/livereload.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/json2.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/underscore-min.js"></script>
+<script src="http://infograficos-estaticos.s3.amazonaws.com/arenas-olimpiada/assets/js/main.js"></script>{% endif %}	
+{% endblock mainContent %}					
