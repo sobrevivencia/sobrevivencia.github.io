@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+    <link href="fonts.css" type="text/css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css">
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="tudo">
+      <header>
+        <h1>
+        	<a href="#" title="Titulo do Site"><img src="assets/images/logo.png" alt="Dia D" /></a>
+        </h1>
+        <a href="http://www.sobrevivencia.org.br" target="_BLANK" title="Sobreviência"><img class='icon-info' src="assets/images/icon-info.png" /></a>
+      </header>
+      <div class="case-telas">
+        <div class="telas">
+          <div class="tela-1">
+            <div class="convite">
+              <div class="tit-sessao">
+                <h2>Você foi desafiado!</h2>
+              </div>
+              <div class="desc-sessao">
+                <p>Maria te desafiou para ir doar sangue com ela dia 08/maio. E aí, vai amarelar? </p>
+              </div>
+              <div class="it-1"><img src="assets/images/convite-1.png"></div>
+              <div class="it-2"><img src="assets/images/convite-2.png"></div>
+              <button id="btn-tela-1">Aceitar</button>
+            </div>
+          </div>
+          <div class="tela-2">
+            <div class="tit-sessao">
+              <h2>Posso doar?</h2>
+            </div>
+            <div class="desc-sessao">
+              <p>Responda o quiz para saber se você está apto para doar em 08/maio:</p>
+            </div>
+            <div class="formulario">
+              <label for="nome"><img src="assets/images/icon-name.png" /> Nome</label><br>
+              <input type="text" name="nome"><br>
+              <label for="nome"><img src="assets/images/icon-message.png" /> Email</label><br>
+              <input type="text" name="email"><br>
+              <button id="comecar">Começar!</button>
+            </div>
+            <div class="case-quiz">
+              <div id="mask"></div>
+              <div class="wrap">
+              	<div id="tinderslide">
+              		<ul>
+              			<li class="pane1">
+              				<div class="img" style="display:flex;justify-content:center;align-items:center;width:100%;height:100%">
+              					<p><img src="assets/images/gravida.png" />Você está grávida?</p>
+              				</div>
+              				<div class="like"></div>
+              				<div class="dislike"></div>
+              				<div class='justificativa'>
+              					<div class="tit-sessao">
+              		             <h2>Ops..</h2>
+              		            </div>
+              		            <div class="img-justification"><img src="assets/images/gravida.png"></div>
+              		            <div class="text-justification">
+              		              <div class="title-justification">
+              		                <h2>Você não está apta para doar sangue dia 08/maio. :(</h2>
+              		                	<p>Não. O obstetra Antonio Julio diz que "a gestante possui 500 ml de sangue a mais no corpo que serve para oxigenar o bebê e nutrir a si mesma. Salvo em situação de emergência e sob estrita orientação médica, grávidas não devem doar sangue".</p>
+              		              </div>
+              		              <div class="sobre-ong">
+              		                <h2>Saiba mais sobre a ONG: </h2><a href="javascript:;" title="Link"><img src="assets/images/sobrevivencia.png"></a>
+              		              </div>
+              		              <div class="outros-projetos">
+              		                <h2>Outras formas de ajudar:</h2><a href="javascript:;" title="Link"><img src="assets/images/pernas-aluguel.png"></a><a href="javascript:;" title="Link"><img src="assets/images/teto.png"></a>
+              		              </div>
+              		            </div>
+              		            <button class="vai_inicio">Voltar para o convite</button>
+              				</div>
+              			</li>
+              			<li class="pane2">
+              				<div class="img" style="display:flex;justify-content:center;align-items:center;width:100%;height:100%">
+              					<p><img src="assets/images/hepatite.png" />Teve hepatite após o 11º aniversário?</p>
+              				</div>
+              				<div class="like"></div>
+              				<div class="dislike"></div>
+              				<div class='justificativa'>
+              					<div class="tit-sessao">
+              		             <h2>Ops..</h2>
+              		            </div>
+              		            <div class="img-justification"><img src="assets/images/hepatite.png"></div>
+              		            <div class="text-justification">
+              		              <div class="title-justification">
+              		                <h2>Você não está apta para doar sangue dia 08/maio. :(</h2>
+              	                	<p>Porque antes dos 10 anos de idade, a probabilidade de o candidato que tenha tido hepatite do tipo A é de quase 100%. Este fato já foi confirmado em vários estudos epidemiológicos. Como a hepatite A não deixa seqüelas nem partículas virais remanescentes após a cura, não há contra-indicação em doar sangue após esse tipo de hepatite.</p>
+              		              </div>
+              		              <div class="sobre-ong">
+              		                <h2>Saiba mais sobre a ONG: </h2><a href="javascript:;" title="Link"><img src="assets/images/sobrevivencia.png"></a>
+              		              </div>
+              		              <div class="outros-projetos">
+              		                <h2>Outras formas de ajudar:</h2><a href="javascript:;" title="Link"><img src="assets/images/pernas-aluguel.png"></a><a href="javascript:;" title="Link"><img src="assets/images/teto.png"></a>
+              		              </div>
+              		            </div>
+              		            <button class="vai_inicio">Voltar para o convite</button>
+              				</div>
+              			</li>
+              			<li class="pane3">
+              				<div class="img" style="display:flex;justify-content:center;align-items:center;width:100%;height:100%">
+              					<p><img src="assets/images/tatuagem.png" />Fez tatuagem ou piercing nos últimos 12 meses?</p>
+              				</div>
+              				<div class="like"></div>
+              				<div class="dislike"></div>
+              				<div class='justificativa'>
+              					<div class="tit-sessao">
+              		             <h2>Ops..</h2>
+              		            </div>
+              		            <div class="img-justification"><img src="assets/images/tatuagem.png"></div>
+              		            <div class="text-justification">
+              		              <div class="title-justification">
+              		                <h2>Você não está apta para doar sangue dia 08/maio. :(</h2>
+              	                	<p>Tatuagem e maquiagem definitiva: após 1 ano do procedimento. Piercing: se feito em local sem condições de avaliar a antissepsia: aguardar 12 meses após realização; com material descartável e feito em local apropriado: aguardar 6 meses após realização; se feito na mucosa oral ou genital: inapto enquanto estiver com o piercing e apto após 12 meses da retirada.</p>
+              		              </div>
+              		              <div class="sobre-ong">
+              		                <h2>Saiba mais sobre a ONG: </h2><a href="javascript:;" title="Link"><img src="assets/images/sobrevivencia.png"></a>
+              		              </div>
+              		              <div class="outros-projetos">
+              		                <h2>Outras formas de ajudar:</h2><a href="javascript:;" title="Link"><img src="assets/images/pernas-aluguel.png"></a><a href="javascript:;" title="Link"><img src="assets/images/teto.png"></a>
+              		              </div>
+              		            </div>
+              		            <button class="vai_inicio">Voltar para o convite</button>
+              				</div>
+              			</li>
+              			<li class="pane4">
+              				<div class="img" style="display:flex;justify-content:center;align-items:center;width:100%;height:100%">
+              					<p><img src="assets/images/peso.png" />Pesa menos de 50kg?</p>
+              				</div>
+              				<div class="like"></div>
+              				<div class="dislike"></div>
+              				<div class='justificativa'>
+              				    <div class="tit-sessao">
+              		             <h2>Ops..</h2>
+              		            </div>
+              		            <div class="img-justification"><img src="assets/images/peso.png"></div>
+              		            <div class="text-justification">
+              		              <div class="title-justification">
+              		                <h2>Você não está apta para doar sangue dia 08/maio. :(</h2>
+              		                <p>O volume de sangue total a ser coletado é diretamente relacionado ao peso do doador. Para os homens não pode exceder a 9ml / kg peso e, para as mulheres, a 8ml / kg peso. O anticoagulante presente na bolsa de coleta liga-se ao sangue impedindo que este coagule. O volume de anticoagulante da bolsa é padronizado para um mínimo de 400ml de sangue. Logo, uma pessoa com peso inferior a 50 kg não poderia doar o volume mínimo.</p>
+              		              </div>
+              		              <div class="sobre-ong">
+              		                <h2>Saiba mais sobre a ONG: </h2><a href="javascript:;" title="Link"><img src="assets/images/sobrevivencia.png"></a>
+              		              </div>
+              		              <div class="outros-projetos">
+              		                <h2>Outras formas de ajudar:</h2><a href="javascript:;" title="Link"><img src="assets/images/pernas-aluguel.png"></a><a href="javascript:;" title="Link"><img src="assets/images/teto.png"></a>
+              		              </div>
+              		            </div>
+              		            <button class="vai_inicio">Voltar para o convite</button>
+              				</div>
+              			</li>
+              		</ul>
+              	</div>
+              </div>
+              <div class="resultado">
+              	<!--<h4>seu resultado:</h4>-->
+              	<div id="msg-feedback">
+              		<h3>Você é um potencial doador<br>baixe nosso aplicativo para IOS</h3>
+              	</div>
+              	<!--<button class='refazer'>Refazer teste</button>-->
+              	<a target="_BLANK" href="https://itunes.apple.com/en/app/blood-pressure-companion-free/id458537528" title="App Store" class='store'>
+              		<img src="assets/images/app.png" alt="Apple Store" />
+              		<img src="assets/images/play.png" alt="Play Store" />
+              		<img src="assets/images/phone.png" alt="Windows Phone" />
+              	</a>
+              </div>
+              <div id="actions">
+              	<a href="#" class="dislike" id="red">NÃO</a>
+              	<a href="#" class="like" id="green">SIM</a>
+              </div>
+            </div>
+          </div>
+          <div class="tela-3">
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>www.sobrevivencia.org.br</p>
+    </footer>
+    <script src="//localhost:35729/livereload.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <script src="assets/js/json2.js"></script>
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/jquery.transform2d.js"></script>
+    <script src="assets/js/jquery.jTinder.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
