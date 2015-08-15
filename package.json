@@ -1,16 +1,18 @@
 {
-  "name": "arenas-olimpiada",
+  "name": "doador-de-primeira",
   "version": "0.1.0",
-  "description": "Tochas Olímpicas",
+  "description": "Doador de primeira",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "tochas",
-    "olímpicas"
+    "doador",
+    "sobrevivência",
+    "ONG",
+    "primeira"
   ],
-  "author": "Mateus Paulino e Thaís Leão",
+  "author": "Red team",
   "license": "ISC",
   "devDependencies": {
     "grunt": "^0.4.5",
